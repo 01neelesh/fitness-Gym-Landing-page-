@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoRDAAR BoDY FITNESS</title>
+</head>
+<link rel="stylesheet" href="css/stylesheet.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<style>
+    body {
+        /* CSS Reset  */
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg3.jpg');
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .header {
+        border: 1px solid black;
+        background-color: black;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 50px;
+        top: 20px;
+    }
+
+    .left img {
+        float: left;
+        filter: invert();
+        width: 55px;
+    }
+
+    .left div {
+        float: left;
+        position: relative;
+        top: 10px;
+        text-align: left;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 20px;
+
+    }
+
+    .mid {
+        display: block;
+        margin: 20px auto;
+        width: 40%;
+        text-align: center;
+        /* border: 2px solid green; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        padding: 12px 23px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        color: blueviolet;
+        text-decoration: underline;
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 50px;
+        top: 32px;
+        /* border: 2px solid yellow; */
+    }
+
+    .btn {
+        background-color: black;
+        margin: 1px 5px;
+        color: white;
+        padding: 2px 10px;
+        border: 2px solid gray;
+        border-radius: 30px;
+        font-size: 13px;
+        cursor: pointer;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold
+    }
+
+    .btn:hover {
+        background-color: blueviolet;
+
+    }
+
+    .Container {
+       
+        position: fixed;
+        right: 10px;
+        bottom: 5px;
+        border: 2px solid maroon;
+        margin: 10px 8px;
+        padding: 11px 1px;
+        width: 42%;
+        border-radius: 10px;
+    }
+  .formgroup input {
+    font-family: 'Ubuntu', sans-serif;
+    display: block;
+    margin: 4px auto;
+    padding:  4px 8pc;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+  .Container h1{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.415);
+  }
+  .Container button{
+    display: block;
+    width: 75%;
+    margin: auto;
+  }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/dumbbell  (2).png" alt="jordaar body logo">
+            <div>JoRDAAR FITNESS</div>
+        </div>
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Fitness coaches </a></li>
+                    <li><a href="#"> Slots </a></li>
+                    <li><a href="#">About Us </a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <button class="btn">Call us Now </button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="Container">
+        <h1>Join the JoRDAAR BoDY Fitness club</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
